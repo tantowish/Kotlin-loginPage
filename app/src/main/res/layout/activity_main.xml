@@ -6,17 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <ImageView
-        android:layout_marginTop="96dp"
-        android:layout_marginBottom="32dp"
-        android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo"
-        android:layout_centerHorizontal="true"
-        />
     <TextView
+        android:layout_marginTop="128dp"
         android:id="@+id/text_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +15,6 @@
         android:textSize="26sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/logo"
         />
     <TextView
         android:id="@+id/text_login"
@@ -74,6 +64,7 @@
         />
 
     <Button
+        android:id="@+id/button_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_forgot"
@@ -81,6 +72,22 @@
         android:layout_marginHorizontal="32dp"
         android:text="Login"
         android:backgroundTint="@color/donker"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/button_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOSHKA CORP."
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
         />
 
 </RelativeLayout>
